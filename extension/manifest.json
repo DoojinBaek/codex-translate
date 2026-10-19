@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Codex Translate",
+  "version": "0.4.1",
+  "description": "Translate the current page in place using your local Codex (ChatGPT) login.",
+  "action": {
+    "default_title": "Codex Translate (Alt+A)"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "nativeMessaging",
+    "contextMenus"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+A",
+        "mac": "Alt+A"
+      },
+      "description": "번역 / 원문 전환"
+    }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAskqDx9nCrkHTedTGmb9SX95g03o/aCFGH/vFVZKpUX6b2bcjLvqOeXeap92ZGG1k04ZrqrMdAAfwWzqLjPfMaTXsweXPE5s9qV3BsPMQWq9U32Msap6S0JrvozEhZfV1fmWomdoUTkXicbRzOIHHGr1YIODv5NKgT+n4KX8c7GHOr9XVjLvIgav8KMwwR5XE3IO+kZ3i6ktZuoqYkKDX5eCkVua1sp9RS/GCxpYg3z+U45dxDF3iqMkb0tLe/YWZ6Ue/leWwdCaPmwvRYwjCJz/KPz6ocN0dRZp1TgvZ4ctFEDxzvok/jozTyqpudves0P9YJOfSbmoPznjPKjpzDwIDAQAB"
+}

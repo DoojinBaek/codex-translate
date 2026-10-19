@@ -1,0 +1,5 @@
+[data-ct-hide]{display:none!important}
+ct-tr{display:contents!important}
+html.ct-original ct-tr{display:none!important}
+html.ct-bilingual ct-tr{display:block!important;margin:.25em 0 .5em;opacity:.85}
+html.ct-bilingual ct-tr[data-inline]{display:inline!important;margin:0 0 0 .4em}
